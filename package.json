@@ -1,0 +1,30 @@
+{
+  "name": "ModelsAgency.ai",
+  "version": "0.0.1",
+  "description": "AI-powered platform for instant access to diverse fashion and advertising models. Professional images in minutes, no photoshoots or AI prompting skills needed.",
+  "main": "index.js",
+  "scripts": {
+    "version": "git add --all",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webmasterish/ModelsAgency.ai.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "webmasterish",
+    "email": "webmasterish@gmail.com",
+    "url": "https://webmasterish.com"
+  },
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "private": "true",
+  "homepage": "https://github.com/webmasterish/ModelsAgency.ai",
+  "bugs": {
+    "url": "https://github.com/webmasterish/ModelsAgency.ai/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
