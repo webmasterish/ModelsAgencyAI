@@ -15,6 +15,12 @@ final class ModelsAgencyAI extends \DotAim\Base\Singleton
 
 		$this->meta_prefix = $this->prefix; // dotaim_modelsagencyai_
 
+		// -------------------------------------------------------------------------
+
+		$this->post_types = [
+			'model' => new Post_Type_Model( $this, $this->core ),
+		];
+
 	}
 	// init()
 
