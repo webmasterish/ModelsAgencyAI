@@ -603,6 +603,10 @@ final class DotAim
 
 		// -------------------------------------------------------------------------
 
+		$this->ModelsAgencyAI();
+
+		// -------------------------------------------------------------------------
+
 		$this->do_action( __FUNCTION__ );
 
 	}
@@ -892,6 +896,28 @@ final class DotAim
 
 	}
 	// Contact()
+
+
+
+	/**
+	 * @since 1.0.0
+	 */
+	public function ModelsAgencyAI()
+	{
+
+		static $instance;
+
+		if ( ! isset( $instance ) )
+		{
+			$instance = new \DotAim\ModelsAgencyAI\ModelsAgencyAI( $this );
+		}
+
+		// -------------------------------------------------------------------------
+
+		return $instance;
+
+	}
+	// ModelsAgencyAI()
 
 	/* ===========================================================================
 	 * ---------------------------------------------------------------------------
