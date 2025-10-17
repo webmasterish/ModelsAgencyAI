@@ -24,6 +24,7 @@ final class ModelsAgencyAI extends \DotAim\Base\Singleton
 		// -------------------------------------------------------------------------
 
 		new Taxonomy_Model_Category( $this->core );
+		new Taxonomy_Model_Part( $this->core );
 
 	}
 	// init()
