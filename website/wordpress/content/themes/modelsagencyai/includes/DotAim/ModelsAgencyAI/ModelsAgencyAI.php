@@ -21,6 +21,10 @@ final class ModelsAgencyAI extends \DotAim\Base\Singleton
 			'model' => new Post_Type_Model( $this, $this->core ),
 		];
 
+		// -------------------------------------------------------------------------
+
+		new Taxonomy_Model_Category( $this->core );
+
 	}
 	// init()
 
