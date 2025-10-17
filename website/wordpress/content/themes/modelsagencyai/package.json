@@ -1,6 +1,6 @@
 {
   "name": "modelsagencyai_wordpress_theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ModelsAgencyAI WordPress Theme",
   "scripts": {
     "dev": "node workflow/dev.js",
