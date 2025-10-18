@@ -26,8 +26,6 @@ final class ModelsAgencyAI extends \DotAim\Base\Singleton
 		// common with all model categories
 		new Taxonomy_Model_Category( $this->core );
 		new Taxonomy_Model_Part( $this->core );
-		new Taxonomy_Model_Use_Case( $this->core );
-		new Taxonomy_Model_Tag( $this->core );
 
 		// mainly used for human + fictional humanoid characters
 		// but could also be applied to animals
@@ -40,6 +38,10 @@ final class ModelsAgencyAI extends \DotAim\Base\Singleton
 		new Taxonomy_Model_Clothing( $this->core );
 		new Taxonomy_Model_Expression( $this->core );
 		new Taxonomy_Model_Pose( $this->core );
+
+		// common with all model categories
+		new Taxonomy_Model_Use_Case( $this->core );
+		new Taxonomy_Model_Tag( $this->core );
 
 		// -------------------------------------------------------------------------
 
