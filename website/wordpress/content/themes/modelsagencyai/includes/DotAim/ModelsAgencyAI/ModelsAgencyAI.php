@@ -41,8 +41,31 @@ final class ModelsAgencyAI extends \DotAim\Base\Singleton
 		new Taxonomy_Model_Expression( $this->core );
 		new Taxonomy_Model_Pose( $this->core );
 
+		// -------------------------------------------------------------------------
+
+		$this->Admin();
+
 	}
 	// init()
+
+
+
+	public function Admin()
+	{
+
+		static $instance;
+
+		if ( ! isset( $instance ) )
+		{
+			$instance = new Admin\Admin( $this->core );
+		}
+
+		// -------------------------------------------------------------------------
+
+		return $instance;
+
+	}
+	// Admin()
 
 }
 // class ModelsAgencyAI
