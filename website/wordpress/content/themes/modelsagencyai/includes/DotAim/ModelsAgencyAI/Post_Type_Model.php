@@ -5,6 +5,10 @@ namespace DotAim\ModelsAgencyAI;
 final class Post_Type_Model extends Base\Post_Type
 {
 
+	public $archive_slug = 'models';
+
+
+
 	public function settings()
 	{
 
@@ -40,9 +44,11 @@ final class Post_Type_Model extends Base\Post_Type
 		// -------------------------------------------------------------------------
 
 		$register_args = [
-			'public'				=> false,
+			'public'				=> true,
 			'menu_icon'			=> 'dashicons-groups',
-			//'menu_position'	=> $menu_position,
+			'menu_position'	=> 3,
+			'hierarchical'	=> true,
+			'has_archive'		=> $this->archive_slug,
 			'can_export'		=> true,
 			'supports'			=> $supports,
 			'show_ui'				=> $this->admin_area_capability
